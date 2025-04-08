@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async 2</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h1>Javascript is funnnn!!!!</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const sayHi = (str) =>{
+        console.log(str, Date.now());
+        
+    }
+
+    // const intervalID = setInterval(sayHi, 1000, "Hi")
+
+    document.querySelector("#stop").addEventListener('click', ()=>{
+        clearInterval(intervalID);
+        console.log("stopedd!!");
+    })
+
+    document.querySelector("#start").addEventListener('click', ()=>{
+        console.log("started!!!");
+        
+    })
+</script>
+</html>
